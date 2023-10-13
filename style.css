@@ -11,19 +11,21 @@ body{
     align-items: center;
     height: 100vh;
     text-align: center;
-    background-color: #1976D2;
+    background-color: #226994;
 
 }
 .container{
-    width: 650px;
-    height: 650px;
+    margin: auto;
+    height: auto;
 }
 
 .main-content{
-    width: 100%;
-    height: 300px;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    margin: auto;
     color: #fff;
-    padding: 50px 50px;
+    
     box-shadow: 0, 0, 10px;
 }
 .main-content .text-area {
@@ -31,15 +33,16 @@ body{
     line-height: 1.5;
 }
 .main-content .person{
+    display: flex;
+    justify-content: end;
     font-size: 1rem;
     color: #fff;
     text-transform: uppercase;
     margin-top: 20px;
-    margin-left: 20rem;
     margin-bottom: 2rem;
 }
 .button-area button{
-    width: 300px;
+    width: 250px;
     background-color: #2962FF;
     color: #fff;
     font-size: 1.2rem;
@@ -52,10 +55,15 @@ body{
 .button-area button:active {
     background-color: lightblue;
 }
-
-footer p{
-   position: absolute;
+footer{
+    position: fixed; 
+    width: 100%;
     bottom: 0;
+}
+footer p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #1A237E;
     color: #fff;
     padding: 10px 10px;
